@@ -26,7 +26,6 @@ public class KonstructionLib {
         konstructionEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
-        konstructionEventBus.addListener(this::addCreative);
 
         KonstructionSounds.register(konstructionEventBus);
     }
@@ -35,10 +34,6 @@ public class KonstructionLib {
 
     }
 
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
-    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
